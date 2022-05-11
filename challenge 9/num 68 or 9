@@ -1,0 +1,11 @@
+import turtle
+import random
+sides=[ 3, 4, 5, 6, 7, 8, 9, 10]
+sid=random.choice(sides)
+angles=[60, 90, 72, 45, 120, 144, 140, 128.571]
+ang=random.choice(angles)
+length=[100, 50, 200, 117, 20, 5, 10, 69]
+leng=random.choice(length)
+for i in range(sid):
+    turtle.forward(leng)
+    turtle.right(ang)
