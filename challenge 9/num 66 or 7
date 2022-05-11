@@ -1,0 +1,8 @@
+import turtle
+import random
+for i in range(8):
+    color=["red" ,"blue" , "green" , "purple" , "orange" , "yellow"]
+    col=random.choice(color)
+    turtle.pencolor(col)
+    turtle.forward(100)
+    turtle.right(45)
