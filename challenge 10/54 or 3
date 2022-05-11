@@ -1,0 +1,9 @@
+import random
+ht=["H", "T"]
+flip=random.choice(ht)
+guess=str(input("H or T")).upper()
+if guess== flip:
+    print("You win")
+else:
+    print("Bad luck")
+print("The computer selected ", flip)
