@@ -1,0 +1,19 @@
+import random
+num=random.randint(1,5)
+guess=int(input("Please enter a number between 1 and 5 "))
+if num==guess:
+    print("well done")
+if guess > num:
+    print("Too high, try again")
+    guess=int(input("Please enter a number between 1 and 5 "))
+    if num == guess:
+        print("Correct")
+    else:
+        print("You lose")
+if guess < num:
+    print("Too low, try again")
+    guess=int(input("Please enter a number between 1 and 5 "))
+    if num == guess:
+        print("Correct")
+    else:
+        print("You lose")
