@@ -1,0 +1,4 @@
+import random
+flist=["strawberry", "blueberry", "mango", "banana", "pineapple"]
+fruit=random.choice(flist)
+print(fruit)
