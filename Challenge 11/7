@@ -1,0 +1,7 @@
+import math
+num1=int(input("Please enter a number"))
+num2=int(input("Please enter another number"))
+div=num1//num2
+divres=math.remainder(num1,num2)
+
+print(num1, "is", "divisible by", num2, div, "times with the remainder", divres)
