@@ -1,0 +1,22 @@
+import random
+colour=[ "red", "blue", "green", "yellow", "purple"]
+print(colour)
+choice=random.choice(colour)
+guess=str(input("choose a colour  "))
+while guess!= choice:
+    if choice == "blue":
+        print("I bet your veins are blue with shame")
+        guess=str(input("choose a colour  "))
+    elif choice =="red":
+        print("You look as red as an apple")
+        guess=str(input("choose a colour  "))
+    elif choice== "green":
+        print("I bet you are green with envy")
+        guess=str(input("choose a colour  "))
+    elif choice=="yellow":
+        print("I bet you are yellow with shame")
+        guess=str(input("choose a colour  "))
+    else:
+        print("I bet you are purple with rage")
+        guess=str(input("choose a colour  "))
+print("well done")
