@@ -1,0 +1,7 @@
+import math
+radius=int(input("Please enter the radius of the cylinder"))
+depth=int(input("Please enter the depth of the cylinder"))
+pi=math.pi
+area=pi*(radius**2)
+area=area*depth
+print(area)
