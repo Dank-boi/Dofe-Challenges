@@ -1,0 +1,4 @@
+import math
+num=int(input("Enter a number above 500"))
+ans=math.sqrt(num)
+print(ans)
