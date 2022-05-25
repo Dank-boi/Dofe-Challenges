@@ -1,0 +1,45 @@
+import random
+correctans=6
+points=0
+numa=random.randint(1,20)
+numb=random.randint(1,20)
+print("what is", numa, "+", numb)
+q1=int(input("answer >>>"))
+q1a=numa+numb
+print(q1a)
+if q1!= q1a:
+    correctans= correctans-1
+points= points + 1
+
+print("what is", numa, "/", numb)
+q2=input("answer >>>")
+q2a=numa/numb
+print(q2a)
+if q2!= q2a:
+    correctans= correctans-1
+points= points + 1
+
+print("what is", numa, "*", numb)
+q3=int(input("answer >>>"))
+q3a=numa*numb
+print(q3a)
+if q3!= q3a:
+    correctans= correctans-1
+points= points + 1
+
+print("what is", numa, "-", numb)
+q4=int(input("answer >>>"))
+q4a=numa-numb
+print(q4a)
+if q4!= q4a:
+    correctans= correctans-1
+points= points + 1
+
+print("what is", numa, "to the power of ", numb)
+q5=int(input("answer >>>"))
+q5a=numa**numb
+print(q5a)
+if q5!= q5a:
+    correctans= correctans-1
+points= points + 1
+print("You scored", correctans, "out of 5")
