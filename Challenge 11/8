@@ -1,0 +1,14 @@
+print("1)Square")
+print("2)Triangle")
+choose=int(input("Enter a number >>>"))
+if choose== 1:
+    SquareHeight=int(input("Enter the length of one side >>>"))
+    SquareArea=SquareHeight*SquareHeight
+    print(SquareArea)
+elif choose ==2:
+    TriangleHeight=int(input("Enter the height of the triangle >>>"))
+    Trianglelenght=int(input("Enter the length of the triangle >>>"))
+    TriangleArea=(TriangleHeight*Trianglelenght)/2
+    print(TriangleArea)
+else:
+    print("Please enter an appropriate number")
