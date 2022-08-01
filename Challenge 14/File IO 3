@@ -1,0 +1,3 @@
+file_id=open("names.txt", "r")
+read=file_id.read()
+print(read)
