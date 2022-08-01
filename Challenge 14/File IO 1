@@ -1,0 +1,7 @@
+file_id=open("number.txt", "w")
+file_id.write("034, ")
+file_id.write("058, ")
+file_id.write("087, ")
+file_id.write("104, ")
+file_id.write("117 ")
+file_id.close()
