@@ -1,0 +1,6 @@
+file_id=open("names.txt", "a")
+userint=str(input("enter a new name "))
+file_id.write(userint)
+concatin8="\n"
+file_id.write(concatin8)
+file_id.close()
