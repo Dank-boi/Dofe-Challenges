@@ -1,0 +1,7 @@
+file_id=open("names.txt", "w")
+file_id.write("Samuel, ")
+file_id.write("Linda, ")
+file_id.write("Kelly, ")
+file_id.write("Frederick, ")
+file_id.write("John ")
+file_id.close()
