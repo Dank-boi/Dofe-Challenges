@@ -1,0 +1,5 @@
+file_id=open("names.txt", "r")
+for i in range(5):
+    read=file_id.readlines()
+    print(read)
+file_id.close()
