@@ -1,0 +1,22 @@
+def useraddition():
+    file_id=open("challenge 6.txt", "a")
+    fname=str(input("enter your first name "))
+    lname=str(input("enter your last name "))
+    usernum1= fname+" "+lname 
+    file_id.write(usernum1)
+    file_id.write("\n")
+    age=str(input("Please enter your age  "))
+    file_id.write(age)
+    file_id.write("\n")
+    file_id.close()
+
+
+def mainloop():
+    q=str(input("Would you like to add another user >>>Y or N")).upper()
+    if q == "Y":
+        useraddition()
+
+print("Opening text file")
+useraddition()
+mainloop()
+print("exiting...")
