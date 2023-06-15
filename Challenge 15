@@ -96,3 +96,150 @@ def mainMenu():
             print("goodbye user")
 mainMenu()
 #still in progress needs C and B to be finished but on the verge of being done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#plan: use 3 different subprograms for the 3 functions of the program
+#and then the basic quit
+#stack overflow MONKE KING
+
+def optionA():
+    print("")
+    fixNumChoice = False
+    while fixNumChoice == False:
+
+        try:
+            global fixnum
+            fixnum = int(input("Please enter the fixture number  "))
+
+        except:
+            print("")
+            print("Please input an integer")
+            print("")
+            mainMenu()
+
+        else:
+
+            if fixnum <= 0:
+                print("fixture not found")
+                mainMenu()
+
+            elif fixnum >= 191:
+                print("fixture not found")
+                mainMenu()
+
+            else:
+                fixNumChoice = True # Validation
+                print("")
+                print("fixture successfully found")
+                print("")
+                #print(fixnum) #troubleshooting stuff
+                fixnum = fixnum - 1
+                #print("new fixnum is" , fixnum) troubleshooting purposes
+                opt = open("firesidefixtures.txt", "r")
+                lineNum = opt.readlines()
+                specificLine = lineNum[fixnum]
+                tempList = specificLine.split(",")
+                #print(tempList) troubleshooting purposes
+                #print(tempList[0]) troubleshooting purposes
+                global listVal1
+                listVal1 = tempList[0]
+                global listVa2
+                listVal2 = tempList[1]
+                global listVal3
+                listVal3 = tempList[2]
+                global listVal4
+                listVal4 = tempList[3]
+                global listVal5
+                listVal5 = tempList[4]
+                global listVal6
+                listVal6 = tempList[5]
+                global listVal7
+                listVal7 = tempList[6]
+                valDisplay = "     {:^}     " "     {:^}     " "     {:^}     " "     {:^}     " "     {:^}     " "     {:^}     "
+                display = " {:^} " " {:^} " " {:^} " " {:^} " " {:^} " " {:^} "
+                print(display.format("Fixture Number" , "Fixture Date", "Player 1 Nickname" , "Player 2 Nickname" , "Fixture Played" , "Winning Nickname"))
+                print(valDisplay.format(listVal1, listVal2, listVal4, listVal5, listVal6, listVal7))
+                #variables!!!
+                opt.close()
+                mainMenu()
+# god bless stack overflow users and plaigarism (well not really plaigarism, they dont't need to know that)
+
+
+    
+def optionB():
+    print("b")
+    opt = open("firesidefixtures.txt", "r")
+    for  i in opt:
+        print(opt.readlines(t))
+        
+
+
+    
+
+
+def optionC():
+    print("c")
+    #do the same thing as A but get the matches won and manipulate it into a integer then display
+
+
+
+#Basic menu with an if statement that either quits or does options A, B or C
+
+def mainMenu():
+    print("Press A to search for a fixture")
+    print("Press B to show all fixtures that have not yet been played")
+    print("Press C to display leader board")
+    print("Press Q to quit")
+    inputChoiceValid = False
+    while inputChoiceValid == False:
+        print("")
+        choice = str(input("Please select a viable option   ")).upper()
+
+        if choice == "A":
+            inputChoiceValid = True
+            optionA()
+
+        elif choice == "B":
+            inputChoiceValid = True
+            optionB()
+
+        elif choice == "C":
+            inputChoiceValid = True
+            optionC()
+
+        elif choice == "Q":
+            inputChoiceValid = True
+            print("goodbye user")
+mainMenu()
+
+
+
+
+
+
+
+
+#slightly broken
